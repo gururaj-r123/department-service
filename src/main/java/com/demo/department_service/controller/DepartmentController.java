@@ -51,6 +51,8 @@ public class DepartmentController {
 			.uri("http://employee-sr:8082/api/employees/departments/" + deptId)
 			.retrieve()
 			.body(List.class);
+		System.out.println("this is contoller" +
+				"");
 		deptPojo.setAllEmployees(allEmps);
 		return deptPojo;
 	}
